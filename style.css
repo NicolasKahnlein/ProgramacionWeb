@@ -1,1 +1,8 @@
+body{background-color: blue;}
 
+/* tag { propiedad : valor; } */
+
+.lirojo {color: red;}
+
+#ultima {color: green;}  /* ID tiene mas pesos que Class */
+/* Usar Clases para varias cosas, usar ID para objetos unicos */

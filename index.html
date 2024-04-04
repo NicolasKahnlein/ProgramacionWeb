@@ -1,57 +1,33 @@
-<!DOCTYPE html> <!-- Indicador para ver el navegadorque vamos a usar en HTML version 5 -->
-<html lang="en"> <!-- seteo el lenguaje en el que va a estar mi web   -->
+<!DOCTYPE html>
+<html lang="es-AR">                  <!-- hola hola -->
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- esto siempre queda igual es estandar  -->
-    <title>mili</title> <!-- <nombreetiqueta> titulonavegador </nombreetiqueta> -->
-    <!-- comentario -->
-    <style>
-        /* comentario */
-    </style>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  <!-- "Document" es el nombre de la pagina web -->
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
+    <!-- Lo que va adentro del body es lo que se ve en la pagina web -->
+    <h1>Titulo del texto</h1> <!-- Son los headers - De h1 hasta h6 va de mas grande a mas chico  -->
+    <h2>Subtitulo</h2>
+    hola
+    <p>Esto es un parrafo</p> <!-- P de parrafo! -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro soluta adipisci illo quasi sunt itaque pariatur sint consequatur reiciendis dolore voluptatum atque eius modi nihil, dolorum ullam distinctio. Ipsam, alias.</p> <!-- Place holder(Lorem) - ocupa el lugar cuando nose que quiero poner todavia en el lugar pero quiero ocupar el espacio para que quede ordenado -->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Maiores est corrupti nobis totam quae laboriosam. Neque aut voluptatum libero facere, harum magni aliquid. Quae sed aspernatur debitis delectus consequuntur animi?</p> <!-- etiqueta "br": Separa el texto en parrafos sin tener que abrir otro "P" - es un salto de linea -->
+    <img src="./imagenes/Captura de pantalla 2023-05-02 141158.png" alt="Texto alternativo si no encuentra el source"> <!-- Imagenes -->
+    <a href="https://www.google.com/webhp?hl=es-419&sa=X&ved=0ahUKEwi6s6in8fSEAxXJHrkGHSbqAi4QPAgJ"> Ir a otra pagina</a> <!-- Crear hipervinculos para otras paginas -->
 
-    <div class="medioDiv" id="masAncho">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque consequuntur commodi animi vero eaque harum quaerat maiores iusto nesciunt perspiciatis, adipisci iure debitis ab accusantium aliquid in dicta et. Adipisci!</div>
-    <div class="medioDiv" id="masAngosto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quas pariatur illo deleniti numquam est, illum voluptate ipsa distinctio quidem? Praesentium officia corrupti iste animi, architecto optio omnis maxime dolorem!</div>
-    <!-- Hero Section -->
-    <!-- aca va el cuerpo de la pagina, lo que quiero mostrar -->
-    <h1> Mili Chalbaud </h1>
-    <h2> subtitulo </h2>
-    <h6> subtitulo mas chico que hay </h6>
-    <div> otra cosa me lo pone abajo ocupa ancho completo LO USO PARA CREAR SECCIONES</div>
-    <span>seccion de ancho determinado por contenido</span>
-    <p> esto es un parrafo</p>
-    <!--  place holder lorem es texto sin sentido que ocupa lugar hasta que el cliente me de lo que quiero ver ; si pongo Lorem*5 estoy guardando espacio para 5 parrafos-->
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus excepturi sapiente tenetur suscipit dicta laborum, autem adipisci eius, nam temporibus impedit odio illum distinctio dolor nesciunt rem voluptatum repellat quod!</p>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita assumenda nulla eum sunt architecto, corrupti adipisci illo, amet eius obcaecati modi, quo repellat cupiditate cumque illum odio! Quod, totam pariatur.
-    Voluptate, corrupti odio nobis facilis officiis laboriosam ex sunt exercitationem, inventore nesciunt, officia esse velit debitis qui hic possimus cumque illum veritatis dolore omnis ducimus. Similique ipsa quasi voluptates animi!<br> <!-- salto de linea --> </p> 
-    <a href="link a dirigir" target="_blank"><img src="./fotos/william.jpeg" alt="Aca va la foto de william "></a> <!-- src="./ rutarelativa" y el href es para que al apretar la imagen lo derive a otra pagina en una nueva pestañea-->
-    <a href="link a dirigir"></a>
-    <ol type="none" start="1" > <!--lista ordenada-->
-        <!-- li*6-->
-        <li class="liRojo">Cursores varios</li>
-        <li class="liRojo tamanioGrande">Cursores varios</li>
-        <li class="liRojo">Cursores varios</li>
-        <li class="liRojo">Cursores varios</li>
-        <li class="liRojo">Cursores varios</li>
-        <li class="liRojo" id="ultima">Cursores varios</li>
-        <li class="liRojo">Cursores varios</li>
-        <li class="liRojo">Cursores varios</li>
-        <li class="liRojo">Cursores varios</li>
-        <li class="liRojo" id="ultima">Cursores varios</li>
-        
+    <ol type="i" start="3"> <!-- Listas ordenadas -->
+        <li>que se yo broder</li>
     </ol>
-    <ul type="none" ><!--lista desordenada onda viñietas-->
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+    <ul type="None">   <!-- Listas desordenadas -->
+        <li>lista desordenada</li>
+        <li class="lirojo">lista desordenada</li>
+        <li>lista desordenada</li>
+        <li class="lirojo">lista desordenada</li>
+        <li class="lirojo" id="ultima">lista desordenada</li>
     </ul>
-    <menu type="none">
-        <li>Home</li>
-    </menu>
-
+    <div> </div>    <!-- secciones -->
+    <span> </span>   <!-- secciones -->
 </body>
 </html>
