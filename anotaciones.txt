@@ -1,0 +1,22 @@
+CSS es Cascade Style Sheet
+Hoja de Estilo en Cascada. << Caja Negra
+
+hay 3 formas de vincular HTML con CSS
+Internal: 
+<style> 
+aca van las reglas de css
+</style>
+
+Inline: 
+<tag style="propiedad:valor">
+
+<3 External: 
+un archivo .css con todas las reglas
+
+https://www.w3schools.com/css/css_howto.asp
+https://www.w3schools.com/css/css_colors.asp
+https://www.w3schools.com/css/css_font.asp
+https://www.w3schools.com/css/css_boxmodel.asp
+https://www.w3schools.com/css/css_units.asp
+https://www.w3schools.com/css/css_display_visibility.asp
+https://www.w3schools.com/css/css_positioning.asp

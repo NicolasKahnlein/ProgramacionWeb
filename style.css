@@ -1,0 +1,47 @@
+*{
+    border: solid 1px red;
+}
+
+body{
+   background-color: #A479BA;
+}
+
+/* tag { propiedad : valor; } */
+
+h1{
+    font-size: 50px;
+    color:yellow;
+    border: 10px solid black;
+    margin-bottom: 2cm;
+    padding: 2cm;
+
+}
+
+.liRojo{
+    color:red;
+
+}
+
+#ultima{
+    color: #f00;;
+}
+
+.liRojo{
+    color:yellow;
+}
+
+.tamanioGrande{
+    font-size:30px
+}
+
+#masAncho{
+    width: 74%;
+}
+#masAngosto{
+    width: 24%;
+}
+
+.medioDiv {
+    width: 49%;
+    display: inline-block;
+}
