@@ -2,7 +2,7 @@ body{background-color: white;}
 
 .contenedor-imagen {
     position: relative;
-    width: 100vw; /* Ancho de la ventana del navegador */
+    width: 98vw;
     height: auto;
     display: flex;
     justify-content: center;
@@ -13,38 +13,85 @@ img {
     height: auto;
     display: block;
 }
+img.numero1{
+    border: 2px solid black;
+}
 .linea-blanca {
     position: absolute;
     top: 1%;
-    left: 0;
-    width: 100%;
+    left: 1%;
+    width: 98%;
     height: 180px;
     display: flex;
     justify-content: left;
     align-items: center;
-    flex-direction: row; /* Ajuste para que los elementos estén uno al lado del otro */
+    flex-direction: row;
     text-align: center;
     background-color: white;
-    z-index: 1; /* Asegura que la línea esté por encima de la imagen */
+    z-index: 1;
 }
 .linea-blanca img {
-    width: auto; /* Ancho deseado para la imagen */
+    width: auto;
     height: 175px;
 }
 .linea-blanca p {
-    color: black; /* Color deseado para el texto */
-    font-size: 40px; /* Tamaño de fuente deseado para el texto */
-    margin-top: 10px; /* Espacio entre la imagen y el texto */
-    margin: 15px;
+    color: black;
+    font-size: 40px;
+    margin-top: 20px;
+    margin: 20px;
 }
 .linea-blanca p:hover {
-    text-decoration: underline; /* Subraya el hipervínculo al pasar el mouse sobre él */
+    text-decoration: underline;
 }
-
-
-/* tag { propiedad : valor; } */
-
-.lirojo {color: red;}
-
-#ultima {color: green;}  /* ID tiene mas pesos que Class */
-/* Usar Clases para varias cosas, usar ID para objetos unicos */
+h1 {
+    text-align: center;
+    font-size: 48px;
+}
+h2.rojo {
+    color: red;
+}
+.contenedor-imagen-2 {
+    display: flex;
+    flex-direction: line;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.contenedor-imagen-2 img {
+    width: 220px;
+    margin-right: 10px;
+}
+h2.rojocentrado {
+    color: red;
+    text-align: center;
+}
+footer {
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+}  
+.contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.columna {
+    display: flex;
+    flex-direction: column;
+}
+.texto-grande {
+    padding: 10px;
+    font-size: 36px;
+    text-align: center;
+}
+.texto-chico {
+    padding: 5px;
+    text-align: center;}
+  
+@media (min-width: 768px) {
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
