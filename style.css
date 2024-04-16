@@ -1,4 +1,46 @@
-body{background-color: blue;}
+body{background-color: white;}
+
+.contenedor-imagen {
+    position: relative;
+    width: 100vw; /* Ancho de la ventana del navegador */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.linea-blanca {
+    position: absolute;
+    top: 1%;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row; /* Ajuste para que los elementos estén uno al lado del otro */
+    text-align: center;
+    background-color: white;
+    z-index: 1; /* Asegura que la línea esté por encima de la imagen */
+}
+.linea-blanca img {
+    width: auto; /* Ancho deseado para la imagen */
+    height: 175px;
+}
+.linea-blanca p {
+    color: black; /* Color deseado para el texto */
+    font-size: 40px; /* Tamaño de fuente deseado para el texto */
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    margin: 15px;
+}
+.linea-blanca p:hover {
+    text-decoration: underline; /* Subraya el hipervínculo al pasar el mouse sobre él */
+}
+
 
 /* tag { propiedad : valor; } */
 
