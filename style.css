@@ -95,3 +95,8 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+.imagenfinal {
+    max-width: 50px;
+    margin: 0 auto;
+    display: block;
+  }
