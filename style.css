@@ -13,15 +13,12 @@ img {
     height: auto;
     display: block;
 }
-img.numero1{
-    border: 2px solid black;
-}
 .linea-blanca {
     position: absolute;
     top: 1%;
     left: 1%;
     width: 98%;
-    height: 180px;
+    height: 12vw;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -32,34 +29,44 @@ img.numero1{
 }
 .linea-blanca img {
     width: auto;
-    height: 175px;
+    height: 10vw;
 }
 .linea-blanca p {
     color: black;
-    font-size: 40px;
-    margin-top: 20px;
-    margin: 20px;
+    font-size: 3em;
+    margin-top: 1em;
+    margin: 1em;
 }
-.linea-blanca p:hover {
+/* .linea-blanca p:hover {
     text-decoration: underline;
+}*/
+.rectangulo {
+    width: 100%;
+    height: 5vw;
+    background-color: #ccc;
+    position: relative;
 }
 h1 {
     text-align: center;
-    font-size: 48px;
+    font-size: 4vw;
 }
 h2.rojo {
     color: red;
+    font-size: 3vw;
+}
+h2 {
+    font-size: 2vw;
 }
 .contenedor-imagen-2 {
     display: flex;
     flex-direction: line;
     align-items: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 .contenedor-imagen-2 img {
-    width: 220px;
-    margin-right: 10px;
+    width: 14vw;
+    margin-right: 1vw;
 }
 h2.rojocentrado {
     color: red;
@@ -68,22 +75,22 @@ h2.rojocentrado {
 footer {
     background-color: black;
     color: #fff;
-    padding: 20px;
+    padding: 1vw;
     text-align: center;
     width: 90%;
 }  
 .contacto {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 1vw;
 }
 .columna {
     display: flex;
     flex-direction: column;
 }
 .texto-grande {
-    padding: 10px;
-    font-size: 36px;
+    padding: 1vw;
+    font-size: 2vw;
     text-align: center;
 }
 .texto-chico {
@@ -96,7 +103,54 @@ footer {
     }
 }
 .imagenfinal {
-    max-width: 50px;
+    max-width: 3vw;
     margin: 0 auto;
     display: block;
-  }
+}
+.boton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.boton:hover {
+    background-color: red;
+}
+.boton:hover p {
+    color: #fff;
+}
+.contenedor-tienda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    padding-top: 100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.producto {
+    flex: 0 0 45%;
+    max-width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+.producto img {
+    max-width: 100%;
+}
+h3 {
+    font-size: 2em;
+}
+.producto a {
+    vertical-align: middle;
+}
+.boton-compra {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
