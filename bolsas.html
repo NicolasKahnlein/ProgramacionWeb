@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es-AR">                  <!-- hola hola -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="contenedor-imagen">
+        <img class="numero1" src="./imagenes/178.jpg" alt="Texto alternativo si no encuentra el source">
+        <div class="linea-blanca">
+            <a href="index.html">
+                <img src="./imagenes/logo.png" alt="Descripción de la otra imagen">
+            </a>
+            <a class="boton" href="productos.html"><p>Productos</p></a>
+            <a class="boton" href="#seccion3"><p>Envasado</p></a>
+            <a class="boton" href="#seccion4"><p>Coccion</p></a>
+            <a class="boton" href="bolsas.html"><p>Bolsas</p></a>
+            <a class="boton" href="#seccion6"><p>Servicios</p></a>
+        </div>
+    </div>
+    <div class="rectangulo">
+        <h1>BOLSAS</h1>
+    </div>
+    <p class="textopbolsas">
+        Estas bolsas, fabricadas con materiales de alta calidad como el nylon y el polietileno, son resistentes y duraderas, lo que las hace ideales para su uso en una variedad 
+        de aplicaciones, desde la conservación de alimentos en el hogar hasta el envasado de productos en industrias alimentarias. Lo que distingue a las bolsas para envasado al vacío es su capacidad para eliminar completamente el aire del interior,
+        creando un entorno hermético que protege los alimentos de la oxidación y el crecimiento de bacterias, mohos y levaduras. Además de preservar la frescura de los alimentos, las bolsas para envasado al vacío también ayudan a prevenir la pérdida de nutrientes y el deterioro del sabor,
+        manteniendo los alimentos tan sabrosos y nutritivos como el día en que fueron envasados.
+    </p>
+    <ul class="textobolsas">
+        <li>Para saber que tipo y tamaño de bolsa es correcto para su negocio, siga las instrucciones y complete lo de abajo.</li>
+        <li>A los precios hay que sumarle el IVA (21%)</li>
+        <li><strong> ATENCION! </strong>Si planea trabajar con coccion al vacio, seleccione la opcion OTRO</li>
+    </ul>
+
+    <div class="grid-container-bolsas">
+        <div class="foto">
+            <img src="./imagenes/bolsa1.jpeg" alt="Descripción de la imagen">
+        </div>
+        <div class="contenido">
+          <h2>ATENCIÓN!</h2>
+          <p>Agregarle 3cm a sus medidas tomadas</p>
+        </div>
+    </div>
+    
+
+    <div class="container">
+        <div class="dropdown">
+            <button class="dropbtn" id="dropdownBtn1">Seleccione el tipo de producto</button>
+            <div class="dropdown-content" id="dropdown1">
+              <a href="javascript:void(0)" data-value="1">Carnes sin hueso</a>
+              <a href="javascript:void(0)" data-value="2">Carnes con hueso</a>
+              <a href="javascript:void(0)" data-value="3">Otro</a>
+            </div>
+        </div>
+          
+        <div class="dropdown">
+            <button class="dropbtn" id="dropdownBtn2">Seleccione la medida de su producto</button>
+            <div class="dropdown-content" id="dropdown2">
+              <a href="javascript:void(0)" data-value="a">10x20</a>
+              <a href="javascript:void(0)" data-value="b">15x20</a>
+              <a href="javascript:void(0)" data-value="c">20x20</a>
+              <a href="javascript:void(0)" data-value="d">15x25</a>
+              <a href="javascript:void(0)" data-value="e">20x25</a>
+              <a href="javascript:void(0)" data-value="f">15x30</a>
+              <a href="javascript:void(0)" data-value="g">20x30</a>
+              <a href="javascript:void(0)" data-value="h">25x30</a>
+              <a href="javascript:void(0)" data-value="i">30x30</a>
+              <a href="javascript:void(0)" data-value="j">30x40</a>
+              <a href="javascript:void(0)" data-value="k">35x40</a>
+              <a href="javascript:void(0)" data-value="l">40x40</a>
+              <a href="javascript:void(0)" data-value="m">40x50</a>
+              <a href="javascript:void(0)" data-value="n">40x60</a>
+            </div>
+        </div>
+
+        <div id="resultadoContainer">Resultado: <span id="resultado"></span></div>
+    </div>
+
+    <footer>
+        <div class="contacto">
+            <div class="columna">
+                <div class="texto-grande">Contactenos</div>
+                <div class="texto-chico">mail: servivacsrl@gmail.com</div>
+                <div class="texto-chico">celular: 1141900025</div>
+                <div class="texto-chico">telefono: 4794-7716</div>
+            </div>
+            <div class="columna">
+                <div class="texto-grande">Visite la planta</div>
+                <div class="texto-chico">coronel manuel rosetti 3536 - olivos</div>
+                <div class="texto-chico">horario: lunes a viernes de 9-17hs</div>
+                <a href="https://www.google.com/maps/place/Cnel.+Manuel+Rosetti+3536,+B1636+Olivos,+Provincia+de+Buenos+Aires/@-34.5137949,-58.5183093,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb0e7211e57a7:0x914723a3edd1693d!8m2!3d-34.5137993!4d-58.5157344!16s%2Fg%2F11g03nf1tx?entry=ttu">
+                    <img src="./imagenes/location.png" alt="Texto alternativo si no encuentra el source" class="imagenfinal">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
