@@ -120,39 +120,56 @@ footer {
 .boton:hover p {
     color: #fff;
 }
-.contenedor-tienda {
+.product-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    gap: 20px; /* Espacio entre las tarjetas */
+    justify-content: center; /* Centrar las tarjetas horizontalmente */
     padding: 20px;
+}
+.card {
     background-color: #fff;
-    padding-top: 100px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.producto {
-    flex: 0 0 45%;
-    max-width: 300px;
-    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
-.producto img {
-    max-width: 100%;
+.card:hover {
+    transform: scale(1.05);
 }
-h3 {
-    font-size: 2em;
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
 }
-.producto a {
-    vertical-align: middle;
+.card-content {
+    padding: 20px;
 }
-.boton-compra {
-    display: block;
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+    color: #333;
+}
+.card-description {
+    color: #666;
     margin-top: 10px;
-    padding: 8px 16px;
+}
+.buy-button {
+    display: inline-block;
+    margin: 15px auto;
+    padding: 10px 20px;
     background-color: #007bff;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
 }
 /* desde aca empiezo con js, hago este comentario para identificar bien que cosa es que */
 h4 {

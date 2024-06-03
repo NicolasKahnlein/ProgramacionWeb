@@ -113,3 +113,40 @@ function calcularResultado(opcion1, opcion2) {
   }
   return resultado;
 }
+
+// DE ACA PARA ABAJO DE PARA LA PARTE DE PRODUCTOS Y EL PRECIO DEL DOLAR
+
+document.addEventListener('DOMContentLoaded', function() {
+  // URL de la API de ejemplo (usando ExchangeRate-API)
+  const apiKey = 'd6cd65889b624e53ae110016b04dc26e'; // Reemplaza con tu API Key
+  const apiUrl = `https://openexchangerates.org/api/latest.json?app_id=${apiKey}`;
+
+  fetch(apiUrl)
+      .then(response => response.json())
+      .then(data => {
+          // Suponiendo que queremos obtener la tasa de USD a ARS (Peso Argentino)
+          const rate = data.conversion_rates.ARS;
+          document.getElementById('precio-dolar').innerText = `USD 1 = ARS ${rate}`;
+      })
+      .catch(error => {
+          console.error('Error al obtener el precio del dólar:', error);
+          document.getElementById('precio-dolar').innerText = 'No se pudo cargar el precio del dólar.';
+      });
+
+  const precioDolarBar = document.getElementById('precio-dolar-bar');
+  const footer = document.querySelector('footer');
+
+  window.addEventListener('scroll', function() {
+      const footerRect = footer.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      if (footerRect.top <= windowHeight) {
+          precioDolarBar.style.position = 'static';
+          footer.classList.add('incorporate');
+      } else {
+          precioDolarBar.style.position = 'fixed';
+          precioDolarBar.style.bottom = '0';
+          footer.classList.remove('incorporate');
+      }
+  });
+});

@@ -5,47 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style1.css" type="text/css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="contenedor-imagen">
-        <img class="numero1" src="./imagenes/178.jpg" alt="Texto alternativo si no encuentra el source">
-        <div class="linea-blanca">
-            <a href="index.html">
-                <img src="./imagenes/logo.png" alt="Descripción de la otra imagen">
-            </a>
-            <a class="boton" href="productos.html"><p>Productos</p></a>
-            <a class="boton" href="#seccion3"><p>Envasado</p></a>
-            <a class="boton" href="#seccion4"><p>Coccion</p></a>
-            <a class="boton" href="bolsas.html"><p>Bolsas</p></a>
-            <a class="boton" href="#seccion6"><p>Servicios</p></a>
-        </div>
-    </div>
+    <nav class="navbar">
+        <div class="logo">Servivac</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="#seccion3">Envasado</a></li>
+            <li><a href="#seccion4">Coccion</a></li>
+            <li><a href="bolsas.html">Bolsas</a></li>
+            <li><a href="#seccion6">Servicios</a></li>
+        </ul>
+    </nav>
     <div class="rectangulo">
         <h1>PRODUCTOS</h1>
     </div>
-    <div class="contenedor-tienda">
-        <div class="producto">
+    <div class="product-container">
+        <div class="card">
             <img src="./imagenes/maquina1.png" alt="Maquina">
-            <h3>Envasadora DZ-400</h3>
-            <a href="#" class="boton-compra">Comprar producto</a>
+            <div class="card-content">
+                <h2 class="card-title">Envasadora DZ-400</h2>
+                <p class="card-description">Para restaurantes, fiambrerias chicas.</p>
+                <a href="detalle.html" class="buy-button">Ver Detalles</a>
+            </div>
         </div>
-        <div class="producto">
+        <div class="card">
             <img src="./imagenes/maquina3.png" alt="Maquina">
-            <h3>Envasadora OPTIMA-800</h3>
-            <a href="#" class="boton-compra">Comprar producto</a>
+            <div class="card-content">
+                <h2 class="card-title">Envasadora OPTIMA-800</h2>
+                <p class="card-description">Descripción corta del producto.</p>
+                <a href="detalle.html" class="buy-button">Ver Detalles</a>
+            </div>
         </div>
-        <div class="producto">
+        <div class="card">
             <img src="./imagenes/maquina4.png" alt="Maquina">
-            <h3>Envasadora MAXIMAX-620</h3>
-            <a href="#" class="boton-compra">Comprar producto</a>
+            <div class="card-content">
+                <h2 class="card-title">MAXIMAX-620</h2>
+                <p class="card-description">Descripción corta del producto.</p>
+                <a href="detalle.html" class="buy-button">Ver Detalles</a>
+            </div>
         </div>
-        <div class="producto">
+        <div class="card">
             <img src="./imagenes/maquina6.png" alt="Maquina">
-            <h3>Envasadora MAXIMAX 600 DUAL</h3>
-            <a href="#" class="boton-compra">Comprar producto</a>
+            <div class="card-content">
+                <h2 class="card-title">MAXIMAX 600 DUAL</h2>
+                <p class="card-description">Descripción corta del producto.</p>
+                <a href="detalle.html" class="buy-button">Ver Detalles</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/maquina6.png" alt="Maquina">
+            <div class="card-content">
+                <h2 class="card-title">MAXIMAX 600 DUAL</h2>
+                <p class="card-description">Descripción corta del producto.</p>
+                <a href="detalle.html" class="buy-button">Ver Detalles</a>
+            </div>
         </div>
     </div>
+    
     <footer>
         <div class="contacto">
             <div class="columna">
@@ -64,5 +84,10 @@
             </div>
         </div>
     </footer>
+
+    <div class="precio-dolar-fijo" id="precio-dolar-bar">
+        <p id="precio-dolar">Cargando el precio del dólar...</p>
+    </div>
+
 </body>
 </html>
