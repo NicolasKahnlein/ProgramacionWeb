@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="style1.css" type="text/css">
     <script src="script.js" defer></script>
+    <script src="carrito.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
@@ -14,37 +15,28 @@
         <ul class="nav-links">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="productos.html">Productos</a></li>
-            <li><a href="#seccion3">Envasado</a></li>
-            <li><a href="#seccion4">Coccion</a></li>
+            <li><a href="informacion.html">Informacion</a></li>
             <li><a href="bolsas.html">Bolsas</a></li>
-            <li><a href="#seccion6">Servicios</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="carrito.html">Cart</a></li>
         </ul>
     </nav>
     <div class="rectangulo">
         <h1>BOLSAS</h1>
     </div>
-    <p class="textopbolsas">
-        Estas bolsas, fabricadas con materiales de alta calidad como el nylon y el polietileno, son resistentes y duraderas, lo que las hace ideales para su uso en una variedad 
-        de aplicaciones, desde la conservación de alimentos en el hogar hasta el envasado de productos en industrias alimentarias. Lo que distingue a las bolsas para envasado al vacío es su capacidad para eliminar completamente el aire del interior,
-        creando un entorno hermético que protege los alimentos de la oxidación y el crecimiento de bacterias, mohos y levaduras. Además de preservar la frescura de los alimentos, las bolsas para envasado al vacío también ayudan a prevenir la pérdida de nutrientes y el deterioro del sabor,
-        manteniendo los alimentos tan sabrosos y nutritivos como el día en que fueron envasados.
-    </p>
-    <ul class="textobolsas">
-        <li>Para saber que tipo y tamaño de bolsa es correcto para su negocio, siga las instrucciones y complete lo de abajo.</li>
-        <li>A los precios hay que sumarle el IVA (21%)</li>
-        <li><strong> ATENCION! </strong>Si planea trabajar con coccion al vacio, seleccione la opcion OTRO</li>
-    </ul>
 
-    <div class="grid-container-bolsas">
-        <div class="foto">
-            <img src="./imagenes/bolsa1.jpeg" alt="Descripción de la imagen">
-        </div>
-        <div class="contenido">
-          <h2>ATENCIÓN!</h2>
-          <p>Agregarle 3cm a sus medidas tomadas</p>
-        </div>
+    <div class="services">
+        <ul class="service-list">
+            <li><span class="arrow">&#9654;</span> Estas bolsas, fabricadas con materiales de alta calidad como el nylon y el polietileno, son resistentes y duraderas, lo que las hace ideales para su uso en una variedad de aplicaciones, desde la conservación de alimentos en el hogar hasta el envasado de productos en la industria alimentaria.</li>
+            <li><span class="arrow">&#9654;</span> Lo que distingue a las bolsas para envasado al vacío es su capacidad para eliminar completamente el aire del interior, creando un entorno hermético que protege los alimentos de la oxidación y el crecimiento de bacterias, mohos y levaduras.</li>
+            <li><span class="arrow">&#9654;</span> Además de preservar la frescura de los alimentos, las bolsas para envasado al vacío también ayudan a prevenir la pérdida de nutrientes y el deterioro del sabor, manteniendo los alimentos tan sabrosos y nutritivos como el día en que fueron envasados.</li>
+        </ul>
     </div>
-    
+
+    <ul class="textobolsas">
+        <li>Para saber que tipo y tamaño de bolsa es correcto para su negocio, tome las medidas de su producto y agregele 3cm a cada medida (ancho - largo - altura)</li>
+        <li>Si planea trabajar con coccion al vacio, seleccione la opcion OTRO</li>
+    </ul>
 
     <div class="container">
         <div class="dropdown">
@@ -76,7 +68,10 @@
             </div>
         </div>
 
-        <div id="resultadoContainer">Resultado: <span id="resultado"></span></div>
+        <div id="resultadoContainer">
+            Resultado: <span id="resultado"></span>
+        </div>
+        <button id="addToCarrito" class="add-to-carrito" data-product-id="" data-product-name="" data-product-price="">Agregar al Carrito</button>
     </div>
 
     <footer>
@@ -97,5 +92,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>

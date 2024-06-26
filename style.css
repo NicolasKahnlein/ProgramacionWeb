@@ -124,7 +124,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: 20px; /* Espacio entre las tarjetas */
-    justify-content: center; /* Centrar las tarjetas horizontalmente */
+    justify-content: center;
     padding: 20px;
 }
 .card {
@@ -231,8 +231,11 @@ h4 {
     font-weight: bold;
     color: #333;
 }
+
+
+
 .textobolsas {
-    font-size: 20px; /* Ajusta el tamaño de la fuente según sea necesario */
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 .textobolsas li {
@@ -243,26 +246,4 @@ h4 {
 .textobolsas li::marker {
     color: red;
     font-size: 30px;
-}
-.textopbolsas {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-}
-.grid-container-bolsas {
-    display: grid;
-    grid-template-columns: 20% 30% 25% 25%; /* Dos columnas con el mismo ancho */
-    gap: 20px; /* Espacio entre las columnas */
-    grid-template-rows: auto;
-}
-.foto {
-    grid-column: 2;
-}
-.contenido {
-    grid-column: 3;
-}
-.contenido h2 {
-    margin-top: 0;
-}
-.contenido p {
-    margin-bottom: 0;
 }

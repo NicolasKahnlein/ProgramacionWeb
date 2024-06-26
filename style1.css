@@ -45,6 +45,13 @@ body {
     position: relative;
     margin: 0 auto;
 }
+.rectangulo-informacion {
+    width: 50%;
+    height: 4vw;
+    background-color: #ccc;
+    position: relative;
+    margin: 0 auto;
+}
 h1 {
     text-align: center;
     font-size: 3vw;
@@ -73,4 +80,64 @@ footer {
 }
 footer.incorporate {
     padding-bottom: 30px; /* Espacio adicional para la barra roja */
+}
+
+/* -----------------Codigo para las flechitas en envasado---------------------- */
+.services {
+    flex: 1;
+    padding: 20px;
+}
+
+.service-list {
+    list-style-type: none;
+}
+
+.service-list li {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #333;
+    display: block;
+    align-items: baseline;
+}
+
+.service-list .arrow {
+    font-size: 1em;
+    color: red;
+    margin-right: 10px;
+    vertical-align: top; /* Alinear la flecha con el primer renglón del texto */
+}
+
+/* -----------------Codigo para "Opcionales:..." en informacion---------------------- */
+.contenedor-gas {
+    text-align: center;
+}
+
+.rectangulo-gas {
+    background-color: red;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    position: relative;
+    display: inline-block;
+    width: 90%;
+}
+
+.rectangulo-gas p {
+    font-size: 1.2em;
+}
+
+.arrow-down {
+    font-size: 2.5em;
+    color: red;
+    margin-top: -10px;
+}
+
+/* Estilo del texto al que apunta la flecha */
+.text-below {
+    margin-top: 8px;
+    margin-bottom: 50px;
+    font-size: 1.2em;
+    color: #333;
+    margin-left: 5%;
+    margin-right: 5%;
 }

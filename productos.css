@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+}
+
+.main-content {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px); /* Ajustar la altura según el tamaño del header y footer */
+}
+
+.container-productos {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+/* Estilo del contenedor de la imagen */
+.image-container-productos {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-left: 1px solid #ddd;
+}
+
+.image-container-productos img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ajusta la imagen sin distorsión */
+}
+
+/* Estilo del contenido con texto */
+.content-productos {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-productos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content-productos li {
+    margin-bottom: 5px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.content-productos li::before {
+    content: "•";
+    color: red;
+    font-size: 1.5em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.titulo {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.subtitulo {
+    font-size: 1.4em;
+    color: red;
+    margin-bottom: 5px;
+}
+
+.todavia-nose {
+    font-size: 1.2em;
+    color: black;
+}

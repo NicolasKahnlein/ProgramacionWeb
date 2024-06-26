@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es-AR">                  <!-- hola hola -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style1.css" type="text/css">
+    <link rel="stylesheet" href="productos.css" type="text/css">
+    <script src="script.js" defer></script>
+    <script src="carrito.js" defer></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Servivac</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="informacion.html">Informacion</a></li>
+            <li><a href="bolsas.html">Bolsas</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="carrito.html">Cart</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="container-productos">
+            <div class="image-container-productos">
+                <img src="./imagenes/tunel2.png" alt="Maquina">
+            </div>
+            <div class="content-productos">
+                <h2 class="titulo">Tunel de termocontraccion W1</h2>
+                <h3 class="subtitulo">Especificaciones tecnicas</h3>
+                <ul>
+                    <li>Dimensiones exteriores en cm (ancho - largo - alto): 58 x 350 x 200 </li>
+                    <li>Dimensiones interiores en cm (ancho - alto): 40 x 60</li>
+                    <li>Peso neto (Kg) 400</li>
+                    <li>Velocidad de la cinta: 3-13 min/H</li>
+                    <li>Consumo deagua: 4L/min</li>
+                    <li>Bomba de vacío 20 m3/h</li>
+                </ul>
+                <h3 class="subtitulo">Precio de venta</h3>
+                <h4 class="todavia-nose">2800 U$D al valor del dia</h4>
+                <button class="buy-button add-to-carrito" data-product-id="6" data-product-name="Tunel W1" data-product-price="2800">Agregar al Carrito</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contacto">
+            <div class="columna">
+                <div class="texto-grande">Contactenos</div>
+                <div class="texto-chico">mail: servivacsrl@gmail.com</div>
+                <div class="texto-chico">celular: 1141900025</div>
+                <div class="texto-chico">telefono: 4794-7716</div>
+            </div>
+            <div class="columna">
+                <div class="texto-grande">Visite la planta</div>
+                <div class="texto-chico">coronel manuel rosetti 3536 - olivos</div>
+                <div class="texto-chico">horario: lunes a viernes de 9-17hs</div>
+                <a href="https://www.google.com/maps/place/Cnel.+Manuel+Rosetti+3536,+B1636+Olivos,+Provincia+de+Buenos+Aires/@-34.5137949,-58.5183093,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb0e7211e57a7:0x914723a3edd1693d!8m2!3d-34.5137993!4d-58.5157344!16s%2Fg%2F11g03nf1tx?entry=ttu">
+                    <img src="./imagenes/location.png" alt="Texto alternativo si no encuentra el source" class="imagenfinal">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="precio-dolar-fijo" id="precio-dolar-bar">
+        <p id="precio-dolar">Cargando el precio del dólar...</p>
+    </div>
+
+</body>
+</html>
